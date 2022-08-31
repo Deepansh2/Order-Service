@@ -102,7 +102,7 @@ exports.updateOrder = async (req,res) =>{
 }
 }
 
-exports.cancelOrder = (req,res) =>{
+exports.cancelOrder = async  (req,res) =>{
 
 
     try{
