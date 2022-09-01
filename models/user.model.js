@@ -1,5 +1,5 @@
 const mongoose  = require('mongoose');
-const constants = require('../utils/constants');
+const constants = require('../utils/constant');
 
 const userSchema = new mongoose.Schema({
 
@@ -24,8 +24,8 @@ const userSchema = new mongoose.Schema({
         unique : true
     },
     ordersPlaced :{
-        Type : [mongoose.SchemaTypes.ObjectId],
-        ref : "order"
+        type : [mongoose.SchemaTypes.ObjectId],
+        ref : 'order'
     },
     userType : {
         type : String,

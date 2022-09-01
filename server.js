@@ -29,7 +29,7 @@ async function init(){
     try{
     await User.collection.drop();
     
-    const user =  User.create({
+    const user =  await User.create({
         name : "deepanshu",
         userId : "admin",
         email : "deepanshusing54@gmail.com",
